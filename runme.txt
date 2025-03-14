@@ -1,0 +1,10 @@
+Remove and recreate the following symlinks to make Rancher work after running Docker Desktop:
+
+rm ~/.docker/cli-plugins/docker-buildx
+ln -s ~/.rd/bin/docker-buildx ~/.docker/cli-plugins/docker-buildx
+ls -l ~/.docker/cli-plugins/docker-buildx
+
+rm ~/.docker/cli-plugins/docker-compose
+ln -s ~/.rd/bin/docker-compose ~/.docker/cli-plugins/docker-compose
+ls -l ~/.docker/cli-plugins/docker-compose
+
